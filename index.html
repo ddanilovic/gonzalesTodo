@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Gonzales ToDo</title>
+    <link id="favicon" rel="icon" href="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Ffavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="header">Gonzales ToDo</h1>
+  <main>    
+        <div class="addTodo">
+          <button onclick="handlers.addTodo()">Add</button>
+          <input id="addTodoTextInput" type="text">
+        </div>
+        
+        <div class="changeTodo">
+          <button onclick="handlers.changeTodo()">Change Todo</button>
+          <input id="changeTodoPositionInput" type="number">
+          <input id="changeTodoTextInput" type="text">
+        </div>
+        
+        <div class="deleteTodo">
+          <button onclick="handlers.deleteTodo()">Delete</button>
+          <input id="deleteTodoPositionInput" type="number">
+        </div>
+        
+        <div class="toggleCompleted">
+          <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+          <input id="toggleCompletedPositionInput" type="number">
+        </div>
+        <div class="toggleAll">
+          <button class="fa fa-angle-double-down  
+    " onclick="handlers.toggleAll()">Toggle All</button>
+        </div>
+        <ul>
+        </ul>
+  </main>   
+    <script src="script.js"></script>
+  </body>
+</html>
